@@ -10,10 +10,19 @@ var client = new Twitter({
     access_token_secret: 'vaHYnQlupPLve0xIR2S40kovTYdJYpAmEjhVtxfVO6ipr',
 });
 
-var params = { screen_name: 'CoderQuick' };
+var params = {
+    q: '#nodejs',
+    count: 20,
+    result_type: 'text',
+    lang: 'en'
+}
+
+
 client.get('statuses/user_timeline', params, function (error, tweets, response) {
     if (!error) {
         console.log(tweets);
+    } else {
+        console.log(error);
     }
 });
 
@@ -27,8 +36,8 @@ request('http://www.google.com', function (error, response, body) {
 
 
 var spotify = new Spotify({
-    id: 3340159d8a9b479bbe84034533315acc,
-    secret: 274e1e89618d4d5ca040b955dd7bc982
+    id: '3340159d8a9b479bbe84034533315acc',
+    secret: '274e1e89618d4d5ca040b955dd7bc982'
             });
 
 spotify.search({type: 'track', query: 'All the Small Things' }, function(err, data) {
