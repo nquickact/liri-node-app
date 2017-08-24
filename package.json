@@ -1,0 +1,25 @@
+{
+  "name": "liri-node-app",
+  "version": "1.0.0",
+  "description": "test app",
+  "main": "liri.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/nquickact/liri-node-app.git"
+  },
+  "keywords": [
+    "liri"
+  ],
+  "author": "Nathan Quick",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/nquickact/liri-node-app/issues"
+  },
+  "homepage": "https://github.com/nquickact/liri-node-app#readme",
+  "dependencies": {
+    "request": "^2.81.0"
+  }
+}
